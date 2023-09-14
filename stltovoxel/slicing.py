@@ -21,7 +21,7 @@ def mesh_to_plane(mesh, bounding_box, parallel):
                 result_id = pool.apply_async(paint_z_plane, args=(mesh_subset, z, vol.shape[1:]))
                 result_ids.append(result_id)
             else:
-                print('Processing layer %d/%d' % (z, bounding_box[2]))
+                # print('Processing layer %d/%d' % (z, bounding_box[2]))
                 _, pixels = paint_z_plane(mesh_subset, z, vol.shape[1:])
                 vol[z] = pixels
             z += 1
