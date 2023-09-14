@@ -1,7 +1,7 @@
 import numpy as np
 import unittest
 
-from stltovoxel import slice
+from stltovoxel import slicing
 
 
 class TestSlice(unittest.TestCase):

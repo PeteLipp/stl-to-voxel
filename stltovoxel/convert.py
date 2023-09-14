@@ -7,7 +7,7 @@ import xml.etree.cElementTree as ETree
 import zipfile
 import numpy as np
 
-from . import slice
+from . import slicing
 
 
 def convert_mesh(mesh, resolution=100, parallel=True):
